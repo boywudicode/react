@@ -1,0 +1,31 @@
+.orange {
+    background-color: darkorange;
+}
+
+.blue {
+    background-color: bisque;
+}
+
+.sm {
+    width: 200px;
+}
+
+.md {
+    width: 300px;
+}
+
+.lg {
+    width: 400px;
+}
+
+.btn {
+    padding: 10px;
+}
+
+.rounded {
+    border-radius: 10px;
+}
+
+.square {
+    border-radius: 1px;
+}
