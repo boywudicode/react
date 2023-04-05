@@ -10,16 +10,16 @@ const ContactPage = () => {
     })
 
     const [votes, setVotes] = useState([0, 0, 0])
-    const apc = () => [
-        setVotes([votes[0] + 1])
-    ]
+    const apc = () => {
+        setVotes({...votes, votes: votes[0] + 1})
+    }
 
     const pdp = () => {
-        setVotes(votes[1] + 1)
+        setVotes({...votes, votes: votes[1] + 1})
     }
 
     const lp = () => {
-        setVotes(votes[2] + 1)
+        setVotes({...votes, votes: votes[2] + 1})
     }
 
 
@@ -53,6 +53,10 @@ const ContactPage = () => {
             {clicks.right}
             <button onclick = {handleLeftClick}>Left Click</button>
             <button onclick = {handleRightClick}>Right Click</button>
+            
+            {votes[0]}
+            {votes[1]}
+            {votes[2]}
             <button onclick = {apc}>APC</button>
             <button onclick = {pdp}>PDP</button>
             <button onclick = {lp}>LP</button>
